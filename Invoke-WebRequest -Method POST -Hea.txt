@@ -1,0 +1,60 @@
+Invoke-WebRequest -Method POST -Headers @{"Content-Type" = "application/json"} -Body '{
+    "transaction_id": 2342357,
+    "merchant_id": 29744,
+    "user_id": 6,
+    "card_number": "434505******9116",
+    "transaction_date": "2019-11-30T23:20:32.812632",
+    "transaction_amount": 373,
+    "device_id": 285475
+}' -Uri http://127.0.0.1:8000/modelo
+
+Invoke-WebRequest -Method POST -Headers @{"Content-Type" = "application/json"} -Body '{
+    "transaction_id": 2342357,
+    "merchant_id": 29744,
+    "user_id": 97051,
+    "card_number": "434505******9116",
+    "transaction_date": "2019-11-30T23:10:32.812632",
+    "transaction_amount": 373,
+    "device_id": 285475
+}' -Uri http://127.0.0.1:8000/modelo
+
+Invoke-WebRequest -Method POST -Headers @{"Content-Type" = "application/json"} -Body '{
+    "transaction_id": 21320399,
+    "merchant_id": 92895,
+    "user_id":2708 ,
+    "card_number": "434505******9116",
+    "transaction_date": "2019-11-30T23:06:32.812632",
+    "transaction_amount": 37300,
+    "device_id": 285475
+}' -Uri http://127.0.0.1:8000/modelo
+
+Invoke-WebRequest -Method POST -Headers @{"Content-Type" = "application/json"} -Body '{
+    "transaction_id": 12344,
+    "merchant_id": 29744,
+    "user_id": 1,
+    "card_number": "444456******4210",
+    "transaction_date": "2019-12-01T22:45:37.873639",
+    "transaction_amount": 734.87,
+    "device_id": 497105
+}' -Uri http://127.0.0.1:8000/modelo
+
+
+Invoke-WebRequest -Method POST -Headers @{"Content-Type" = "application/json"} -Body '{
+    "transaction_id": 1111,
+    "merchant_id": 29744,
+    "user_id": 97051,
+    "card_number": "434505******9116",
+    "transaction_date": "2019-11-29T23:16:32.812632",
+    "transaction_amount": 373,
+    "device_id": 285475
+}' -Uri http://127.0.0.1:8000/modelo
+
+
+
+pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
+
+
+"C:\Users\andre\AppData\Local\Programs\Python\Python310\python.exe" -m pip install xgboost
+
+
+"C:\Users\andre\AppData\Local\Programs\Python\Python310\python.exe" -m pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
